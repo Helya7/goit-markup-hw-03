@@ -13,6 +13,12 @@ p, h1, h2, h3, h4, h5, h6 {
     --second-button-color:#E7E9FC;
     --bgr-portfolio: #E5E5E5;
     --bgr-team: #F4F4FD;
+    --border-color-header: #E7E9FC;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
@@ -26,9 +32,18 @@ body {
     width: 100%;
     max-width: 1158px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 .section {
+    padding-top: 120px;
+}
+
+.markers.list {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.section-do {
     padding: 120px 0;
 }
 
@@ -39,6 +54,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     text-transform: uppercase;
+    text-align: center;
+    padding: 24px 0;
 }
 
 .part-site-title {
@@ -48,11 +65,21 @@ body {
 .header-container {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border-color-header);
 }
 
 .header-menu {
     display: flex;
     gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 76px;
+    flex-grow: 1;
 }
 
 .address {
@@ -78,6 +105,7 @@ body {
 
 .header {
     background-color:var(--priority-bgr-color);
+    border-bottom: 1px solid var(--border-color-header);
 }
 
 .contact {
@@ -94,9 +122,14 @@ body {
     list-style-type: none;
 }
 
+.markers.nav {
+    padding: 24px 0px;
+}
+
 .first-section {
     background-color: var(--second-bgr-color);
     padding: 188px 0;
+    text-align: center;
 }
 
 .do-images {
@@ -111,7 +144,10 @@ body {
     font-size: 56px;
     line-height: 0.9;
     letter-spacing: 0.02em;
+    max-width: 496px;
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: 48px;
 }
 
 .button-of-order {
@@ -124,6 +160,8 @@ body {
     border: var(--button-color);
     cursor: pointer;
     justify-content: center;
+    height: 56px;
+    width: 169px;
 }
 
 .button-of-order:hover {
@@ -136,6 +174,16 @@ body {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.title-h3.team {
+    text-align: center;
+}
+
+.title-h3.filters {
+    padding-left: 16px;
 }
 
 .title-h2 {
@@ -145,15 +193,57 @@ body {
     font-size: 36px;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 72px;
 }
 
-.fourth-section {
+.title-h2.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: 1px;
+}
+
+.team-section {
     background-color: var(--bgr-team);
+    padding: 120px 0;
+}
+
+.team-img {
+    display: block;
+    max-width: 100%;
+}
+
+.paragraph-team {
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .markers-team {
     list-style-type: none;
     background-color:var(--priority-bgr-color);
+}
+
+.markers-team.team.list {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.title.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: 1px;
 }
 
 .bgr-portfolio {
@@ -173,6 +263,28 @@ body {
     border: 1px solid var(--second-button-color);
     border-radius: 4px;
     cursor: pointer;
+    height: 48px;
+    margin-bottom: 72px;
+}
+
+.button-filter.all {
+    width: 69px;
+}
+
+.button-filter.web-site {
+    width: 116px;
+}
+
+.button-filter.app {
+    width: 78px;
+}
+
+.button-filter.desing {
+    width: 101px;
+}
+
+.button-filter.marketing {
+    width: 126px;
 }
 
 .button-filter:hover {
@@ -193,6 +305,11 @@ body {
     color: var(--priority-color);
 }
 
+.paragraph.filter {
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
 .title-h2-portfolio {
     font-weight: 500;
     font-size: 20px;
@@ -202,8 +319,13 @@ body {
     text-decoration: none;
 }
 
-.bgr-footer {
+.section-footer {
     background-color:var(--second-bgr-color);
+    padding: 100px 0;
+}
+
+.markers.img-portfolio {
+    border: 1px solid var(--border-color-header);
 }
 
 .site-title-footer {
@@ -217,6 +339,8 @@ body {
 
 .paragraph-footer {
     color: var(--second-button-color);
+    max-width: 264px;
+    padding-top: 16px;
 }
 
 .team-list {
@@ -238,4 +362,5 @@ body {
 .img-filers {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
